@@ -27,7 +27,7 @@ function Login() {
       dispatch(login())
       setSend(true)
     } catch (error) {
-      toast.error(error.response.data.message)
+      toast.error(error)
     }
     setLoading(false)
   };
